@@ -1,0 +1,242 @@
+/* Importing Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@300;400;600&display=swap');
+
+/* Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f0f2f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navigation Styles */
+nav {
+    background: #1a73e8;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10%;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav .logo a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffc107;
+}
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: #fff;
+}
+
+.menu-toggle.active i {
+    color: #ffc107;
+}
+
+/* Mobile Navigation */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background: #1a73e8;
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        padding: 20px 0;
+    }
+
+    nav ul.menu-active {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
+
+/* Home Section */
+.home-section {
+    height: 100vh;
+    background: linear-gradient(to right, #ffffff, #ffffff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.home-section .container {
+    display: flex;
+    align-items: center;
+}
+
+.text-container {
+    color: #000000;
+    max-width: 600px;
+    padding-right: 20px;
+}
+
+.text-container h1 {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.text-container h2 {
+    font-size: 48px;
+    font-weight: 700;
+    margin: 10px 0 20px 0;
+}
+
+.text-container p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    background: #ffc107;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+    background: #ffca28;
+}
+
+.image-container img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* Profil sampai Kontak - Penataan Teks ke Kiri */
+.section {
+    padding: 60px 10%;
+    background: #fff;
+    text-align: left;  /* Mengubah teks menjadi rata kiri */
+}
+
+.section h2, .section h3 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: left;  /* Mengubah heading menjadi rata kiri */
+}
+
+.section p {
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    text-align: left;  /* Mengubah paragraf menjadi rata kiri */
+}
+
+.section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.section ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    text-align: left;  /* Mengubah daftar menjadi rata kiri */
+    display: flex;
+    align-items: center;
+}
+
+.section ul li i {
+    margin-right: 10px;
+}
+
+/* Menghapus section-icon styles karena tidak digunakan lagi */
+.section-icon {
+    display: none;
+}
+
+/* Skills Section */
+.skills-container {
+    margin-bottom: 20px;
+}
+
+.skill-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-align: left;  /* Mengubah judul keterampilan menjadi rata kiri */
+}
+
+.skill-bar {
+    background: #f0f2f5;
+    border-radius: 50px;
+    overflow: hidden;
+    text-align: left;  /* Mengubah bar keterampilan menjadi rata kiri */
+}
+
+.skill-bar-fill {
+    background: #1a73e8;
+    padding: 10px;
+    border-radius: 50px;
+    text-align: right;
+    color: #fff;
+    font-weight: 600;
+}
+/* Footer Styles */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 10%;
+}
+
+footer p {
+    margin: 0;
+}

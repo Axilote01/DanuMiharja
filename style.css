@@ -158,26 +158,27 @@ nav ul li a:hover {
 }
 
 /* Profil sampai Kontak - Penataan Teks ke Kiri */
+
 .section {
     padding: 60px 10%;
     background: #fff;
     text-align: left;  /* Mengubah teks menjadi rata kiri */
 }
 
-.section h2, .section h3 {
+.section h2 {
     font-size: 32px;
     font-weight: 600;
     margin-bottom: 20px;
-    text-align: left;  /* Mengubah heading menjadi rata kiri */
+}
+
+.section-item {
+    display: flex;
+    align-items: flex-start;
 }
 
 .section p {
     font-size: 16px;
     line-height: 1.6;
-    max-width: 800px;
-    margin: 0 auto;
-    margin-bottom: 20px;
-    text-align: left;  /* Mengubah paragraf menjadi rata kiri */
 }
 
 .section ul {
